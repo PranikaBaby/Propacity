@@ -62,3 +62,30 @@
 .mini-card:hover .weather-icon {
   transform: rotate(10deg); /* Rotate slightly on hover */
 }
+/* Container for the Flexbox layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Vertically centers items */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Individual items within the Flexbox container */
+.flex-item {
+  flex: 1 1 30%; /* Grow, shrink, and base size (30% of the container) */
+  margin: 10px; /* Spacing around each item */
+  padding: 20px;
+  background-color: #009688;
+  color: white;
+  text-align: center; /* Centers text inside each item */
+  border-radius: 5px; /* Rounds the corners */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .flex-item {
+    flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+  }
+}
